@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventes de voyages</title>
+  <link rel="stylesheet" href="/css/france.css">
+</head>
+<body>
+  <header>
+    <h1>ADVENTURE</h1>
+  </header>
+  <main>
+    <section class="destination">
+      <!-- Boucle sur les différentes destinations pour afficher les cartes -->
+      <div class="destination__card">
+        <h2>Maroc</h2>
+            <p>Description de la destination 1</p>
+        <button>Réserver</button>
+      </div>
+      <div class="destination2__card">
+        <h2>France</h2>
+        <img src="image-destination-2.jpg" alt="Image de la destination 2">
+        <p>Description de la destination 2</p>
+        <button>Réserver</button>
+      </div>
+      <!-- Ajoutez autant de cartes que nécessaire -->
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Ventes de voyages 2023</p>
+  </footer>
+  <script>
+    // Ajoutez ici votre JavaScript pour ajouter de la fonctionnalité
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        alert("Réservation effectuée avec succès!");
+      });
+    });
+  </script>
+</body>
+</html>
